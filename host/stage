@@ -1,7 +1,7 @@
-[web]
+[stage]
 frontend ansible_host=anirudhblygmail.centralus.cloudapp.azure.com
 
-[web:vars]
+[all:vars]
 ansible_ssh_user=anirudhblygmail
 ansible_ssh_pass='ygmail0A@lzerw'
 ansible_port=42006

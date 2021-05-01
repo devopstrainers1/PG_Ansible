@@ -1,7 +1,7 @@
-[web]
+[dev]
 frontend ansible_host=localhost
 
-[web:vars]
+[all:vars]
 ansible_ssh_user=ajaycshotmail
 ansible_ssh_pass='otmail0A@mfpsv'
 ansible_port=42006
