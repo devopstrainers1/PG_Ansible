@@ -1,6 +1,7 @@
 - name: Deploy servers
   gather_facts: false
-  hosts: "{{ hosts }}"
-  
+  hosts: dev
+  become_user: root
+
   roles:
     - role: devops_pg
