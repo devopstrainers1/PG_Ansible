@@ -1,0 +1,6 @@
+---
+# handlers file for devops_pg
+- name: "Restart the service"
+  service:
+    name: {{ service_name }}
+    state: restarted
