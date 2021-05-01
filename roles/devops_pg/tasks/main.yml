@@ -1,18 +1,18 @@
 ---
 # tasks file for devops_pg
-  - name: Install apache
-    package:
-      name: {{ package_name }}
-      state: present
+- name: Install apache
+  package:
+    name: "{{ package_name }}"
+    state: present
   
-  - name: Update Port for apache
-    template:
-      src: ports.conf.j2
-      dest: /etc/apache2/ports.conf
-    notify:
-      - Restart the service
+- name: Update Port for apache
+  template:
+    src: ports.conf.j2
+    dest: /etc/apache2/ports.conf
+  notify:
+    - Restart the service
  
-  - name: Copy web content
-    copy:
-      src: index.html
-      dest: /var/www/html/
+- name: Copy web content
+  copy:
+    src: index.html
+    dest: /var/www/html/
